@@ -1,0 +1,33 @@
+.sb{
+    height: 320px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.sb-first {
+    height: 300px;
+    width: 300px;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid;
+}
+.sb-scond{
+    height: 300px;
+    width: 300px;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:50%;
+    border: 2px solid;
+}
+.sb-center{
+    height: 300px;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+}

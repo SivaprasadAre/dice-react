@@ -1,0 +1,105 @@
+
+.rolls{
+  display: none;
+}
+.dice-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#view{
+  width:100px;
+  height:100px;
+}
+#dice{
+  width:100px;
+  height:100px;
+  position:relative;
+  transform-style:preserve-3d;
+  transition: transform 1s;
+}
+.diceFace{
+  position:absolute;
+  width:100px;
+  height:100px;
+  text-align:center;
+  line-height:100px;
+  font-size:45px;
+  border:2px solid #a00;
+  border-radius:25px;
+}
+#front{
+  background-color:rgba(255,255,255);
+  transform: rotateY(0deg) translateZ(50px);
+}
+#right{
+  background-color:rgba(255,255,255);
+  transform:rotateY(90deg) translateZ(50px);
+}
+#back{
+  background-color:rgba(255,255,255);
+  transform:rotateY(180deg) translateZ(50px);
+}
+#left{
+  background-color:rgba(255,255,255);
+  transform:rotateY(-90deg) translateZ(50px);
+}
+#top{
+  background-color:rgba(255,255,255);
+  transform:rotateX(90deg) translateZ(50px);
+}
+#bottom{
+  background-color:rgba(255,255,255);
+  transform:rotateX(-90deg) translateZ(50px);
+}
+span{
+  display:inline-block;
+  padding:4px 10px;
+  margin:3px;
+  background-color:#0aa;
+  border:2px inset #dd0
+}
+.side {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  box-shadow:inset 0 0 40px #ccc;
+  border-radius: 25px;
+}
+#dice .front.inner  {
+  transform: translateZ(98px);
+}
+#dice .front  {
+  transform: translateZ(100px);
+}
+.dot {
+  position:absolute;
+  width: 25px;
+  height: 25px;
+  border-radius:23px;
+  background:#444;
+  box-shadow:inset 5px 0 10px #000;
+}
+.dot.center {
+  margin: 38px 0 0 38px;
+}
+.dot.dtop {
+  margin-top:10px;
+}
+.dot.dleft {
+  margin-left:66px;
+}
+.dot.dright {
+  margin-left: 9px;
+}
+.dot.dbottom {
+  margin-top:66px;
+}
+.dot.center.dleft {
+  margin: 37px 0 0 9px;
+}
+.dot.center.dright {
+  margin: 37px 0 0 66px;
+}
